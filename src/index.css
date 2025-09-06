@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Caviar Dreams Bold";
+  src: url("./Fonts/caviar_dreams/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  font-family: "Caviar Dreams Bold";
+}
+
+html,body {
+  height: 90vh;
+  width:100%;
+  padding: 0;
+  margin: 0;
+  padding-top: env(safe-area-inset-top, 20px); /* 20px is fallback */
+  overflow-x: hidden;
+}
+
+
+#root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #C26A82;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height:100vh;
+  width: 100%;
+}
+
+
+.Wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* Or however tall you want the layout */
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+}
+
+#top-left {
+  background-image: url('./assets/Top Left.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+#bottom-right {
+  background-image: url("./assets/Bottom Right.svg");
+  background-size: contain; /* change cover → contain to avoid cropping */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  aspect-ratio: 16 / 9; /* or whatever ratio suits the image */
+  width: 100%; /* height will auto-scale based on aspect-ratio */
+  z-index: 1;
+}
+
+
+h1 {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  width: 100%;
+  text-shadow: 0px 6px 6px  rgba(32, 31, 31, 0.459);
+  font-size: 3rem;
+  z-index: 3;
+  bottom: 38%;
+  
+}
+
+u {
+  text-underline-offset: 1.5rem; /* or whatever space you want */
+  text-decoration-thickness: 4px;
+}
+
+
+.frame {
+  background-image: url('./assets/K&P Dropshadow 2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  position: absolute;
+  /* background-color: red; */
+  height: 60%;
+  width: 60%;
+  bottom: -15%;
+  right: -5%;
+  z-index: 2;
+}
+
+
+.content {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: -10%;
+}
+
+.content button {
+  
+  /* Font Styles */
+  color: #FFFF;
+  font-size: 1rem;
+  /*             */
+  
+  position: absolute;
+  top:65%;
+  border-radius: 30px;
+  border-color: #FFFF;
+  background-color: transparent;
+  border-style: solid 8px;
+  height: 5%;
+  width: 50%;
+  z-index: 3;
+  border-width: 3px;
+  text-shadow: 0px 6px 6px  rgba(32, 31, 31, 0.459);
+  box-shadow: 0px 6px 6px rgba(32, 31, 31, 0.459);
+
+}
+
+
+.box-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width:100%;
+  margin: 12px;
+  border: solid 8px;
+}

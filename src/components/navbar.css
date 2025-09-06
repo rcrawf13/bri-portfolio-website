@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    top: 5%;
+    font-size: 1.2rem;
+
+}
+
+
+ul {
+    list-style-type:none;
+    padding: 0%;
+    display: flex;
+    gap: 2rem;
+
+}
+
+
+li {
+    display: inline;
+    min-width: 91.78px;
+    text-align: center;
+
+}
+
+
+a {
+    text-decoration: none;
+    text-shadow: 0px 6px 6px  rgba(32, 31, 31, 0.459);
+
+    color: #FFFF;
+}
+
+a u {
+      text-underline-offset: 1.5rem; /* or whatever space you want */
+
+}
