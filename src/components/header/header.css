@@ -1,0 +1,51 @@
+h1  {
+
+/* Alignment & Positioning */
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  bottom: 38%;
+  
+  top: 25%;
+  z-index: 3;
+  
+  
+  /* Font Alteration */
+  font-size: 5rem;
+  text-shadow: 0px 6px 6px  rgba(32, 31, 31, 0.459);
+  font-family:'Pacifico';
+  text-align: center;
+ 
+  
+} 
+
+
+
+u {
+  text-underline-offset: 1.5rem; 
+  text-decoration-thickness: 4px;
+    font-family:'Pacifico';
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+    z-index: 2;
+  }
+  a {
+    font-size: 1.25rem;
+  }
+
+  .frame {
+    right: -15%;
+  }
+}
+
