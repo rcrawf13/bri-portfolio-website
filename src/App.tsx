@@ -1,5 +1,5 @@
 import './index.css'
-import NavBar from './components/NavBar'
+import NavBar from './components/navigation/NavBar'
 import Header from './components/header/Header'
 
 function App() {

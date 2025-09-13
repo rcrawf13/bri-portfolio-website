@@ -1,0 +1,67 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    top: 5%;
+    font-size: 1.2rem;
+
+
+    font-family: "Pacifico";
+}
+
+
+ul {
+    list-style-type:none;
+    padding: 0%;
+    display: flex;
+    gap: 2rem;
+
+
+}
+
+
+
+@keyframes underline {
+    from   {
+        text-decoration: none;
+    }
+    to {
+        text-decoration: underline;
+    }
+}
+
+li {
+      min-width: 91.78px;
+}
+.inActive {
+    display: inline;
+    text-align: center;
+    color: #ffffff7c;
+    min-width: 91.78px;
+}
+
+
+.underline {
+    animation-name: underline;
+    animation-duration: 1ms;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+a {
+    text-decoration: none;
+    text-shadow: 0px 6px 6px  rgba(32, 31, 31, 0.459);
+
+    color: #FFFF;
+}
+
+a u {
+      text-underline-offset: 1.5rem;
+
+}
+
+

@@ -10,9 +10,7 @@
       url("/src/assets/Text Faces/Pacifico-Regular.ttf") format('truetype');
   }
 
-* {
-  font-family: "Caviar Dreams Bold";
-}
+
 
 html,body {
   height: 100vh;
